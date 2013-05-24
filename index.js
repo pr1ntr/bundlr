@@ -1,6 +1,6 @@
 require('coffee-script')
 
-var bundleify = require("./src/bundleify");
+var bundlr = require("./src/bundlr");
 
 
-module.exports = bundleify;
+module.exports = bundlr;
