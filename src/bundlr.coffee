@@ -8,33 +8,10 @@ uglify = require('uglify-js')
 mime = require('mime')
 through = require('through')
 fs = require('fs')
+htmlr = require('browserify-htmlr')
 
 
-
-
-module.exports = bundlr = (filename) ->
-    data = ''
-    write = (buf) ->
-        data += buf
-    end = () ->
-        safeText = data.replace(/\"/g, '\u005C\u0022')
-        safeText = safeText.replace(/^(.*)/gm, '"$1')
-        safeText = safeText.replace(/(.+)$/gm, '$1" +')
-        safeText = safeText.replace(/\+$/, '')
-
-        finalHtml = 'module.exports = ' + safeText + ';\n';
-
-        @queue finalHtml
-        @queue null
-
-    ext = path.extname(filename)
-    if ext is ".html"
-        return through(write, end)
-    else
-        return through()
-
-
-module.exports = buildjs = (opts) ->
+module.exports = bundlr = (opts) ->
     
     console.log htmlify
     src = opts.src
@@ -58,7 +35,7 @@ module.exports = buildjs = (opts) ->
     
     b.transform(coffeeify)  
     b.transform(brfs)   
-    b.transform(htmlify)
+    b.transform(htmlr)
 
     b.transform (filename) ->
         b.allFiles.push(filename)
