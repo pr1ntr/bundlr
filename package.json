@@ -1,5 +1,5 @@
 {
-  "name": "bundleify",
+  "name": "bundlr",
   "version": "0.0.1",
   "description": "Creates bundled .js source from one entry file. Optionally will write the file to the filesystem.",
   "main": "index.js",
