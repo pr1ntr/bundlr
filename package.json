@@ -1,0 +1,18 @@
+{
+  "name": "bundleify",
+  "version": "0.0.1",
+  "description": "Creates bundled .js source from one entry file. Optionally will write the file to the filesystem.",
+  "main": "index.js",
+  "dependencies": {
+    "brfs": "~0.0.5",
+    "browserify": "~2.14.2",
+    "mime": "~1.2.9",
+    "coffeeify": "~0.4.0",
+    "uglify-js": "~2.3.6",
+    "through": "~2.3.4"
+  },
+  "devDependencies": {},
+  "repository": "",
+  "author": "pr1ntr",
+  "license": "BSD"
+}
