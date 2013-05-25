@@ -13,7 +13,6 @@ htmlr = require('browserify-htmlr')
 
 module.exports = bundlr = (opts) ->
     
-    console.log htmlify
     src = opts.src
     route = opts.route
     dest = opts.dest
@@ -44,7 +43,7 @@ module.exports = bundlr = (opts) ->
        
 
 
-    b.add __dirname+"/../"+src
+    b.add src
     
 
 
