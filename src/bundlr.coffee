@@ -97,10 +97,10 @@ module.exports = bundlr = (opts) ->
 
 
                     if compress
-                        result = uglify src ,
+                        result = uglify.minify src ,
                             fromString:true
 
-                        src = result
+                        src = result.code
 
                     cache[req_path] = src
 

@@ -11,7 +11,7 @@
     "uglify-js": "~2.3.6",
     "through": "~2.3.4",
     "coffee-script": "~1.6.2",
-    "browserify-htmlr" : "~0.0.3"
+    "browserify-htmlr": "~0.0.3"
   },
   "devDependencies": {},
   "repository": "git@github.com:pr1ntr/bundlr.git",
