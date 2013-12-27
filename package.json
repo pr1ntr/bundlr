@@ -5,12 +5,11 @@
   "main": "index.js",
   "dependencies": {
     "brfs": "~0.0.5",
-    "browserify": "~2.14.2",
+    "browserify": "~3.14.1",
     "mime": "~1.2.9",
-    "coffeeify": "~0.4.0",
+    "coffeeify": "~0.5.2",
     "uglify-js": "~2.3.6",
     "through": "~2.3.4",
-    "coffee-script": "~1.6.2",
     "browserify-htmlr": "~0.0.3"
   },
   "devDependencies": {},
