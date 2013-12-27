@@ -1,6 +1,6 @@
 {
   "name": "bundlr",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Creates bundled .js source from one entry file. Optionally will write the file to the filesystem.",
   "main": "index.js",
   "dependencies": {
