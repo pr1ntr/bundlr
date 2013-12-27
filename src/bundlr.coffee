@@ -67,8 +67,7 @@ module.exports = bundlr = (opts) ->
                 b.allFiles = []
                 b.bundle {debug:debug} , (err, src) ->
                     compress = !debug
-                    isWatch = watch
-                           
+                              
 
                     if err
                         return callback(err)
