@@ -1,9 +1,9 @@
 {
   "name": "bundlr",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Creates bundled .js source from one entry file. Optionally will write the file to the filesystem.",
   "main": "index.js",
-  "devDependencies": {
+  "dependencies": {
     "browserify": "~3.14.1",
     "mime": "~1.2.9",
     "coffeeify": "~0.5.2",
@@ -11,7 +11,7 @@
     "through": "~2.3.4",
     "browserify-htmlr": "~0.0.3"
   },
-  "dependecnies": {},
+  "devDependencies": {},
   "repository": "git@github.com:pr1ntr/bundlr.git",
   "author": "pr1ntr",
   "license": "BSD"
