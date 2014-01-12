@@ -3,7 +3,6 @@
 path = require('path')
 coffeeify = require('coffeeify')
 browserify = require('browserify')
-brfs = require('brfs')
 uglify = require('uglify-js')
 mime = require('mime')
 through = require('through')
