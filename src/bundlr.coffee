@@ -24,7 +24,6 @@ module.exports = bundlr = (opts) ->
     b = browserify() 
     
     b.transform(coffeeify)  
-    b.transform(brfs)   
     b.transform(htmlr)
 
     b.transform (filename) ->
