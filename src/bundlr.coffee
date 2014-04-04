@@ -7,7 +7,7 @@ uglify = require('uglify-js')
 mime = require('mime')
 through = require('through')
 fs = require('fs')
-typify = require('typify')
+typeify = require('typeify')
 htmlr = require('browserify-htmlr')
 
 
@@ -24,7 +24,7 @@ module.exports = bundlr = (opts) ->
     b = browserify() 
     
     b.transform(coffeeify)  
-    b.transform(typify)
+    b.transform(typeify)
     b.transform(htmlr)
 
     b.transform (filename) ->

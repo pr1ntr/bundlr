@@ -10,7 +10,7 @@
     "uglify-js": "~2.3.6",
     "through": "~2.3.4",
     "browserify-htmlr": "~0.0.3",
-    "typify": "~0.2.5"
+    "typeify": "~0.1.1"
   },
   "devDependencies": {},
   "repository": "git@github.com:pr1ntr/bundlr.git",
